@@ -4,7 +4,6 @@ import get from "lodash/get"
 import Helmet from "react-helmet"
 import include from "underscore.string/include"
 
-import Bio from "../components/Bio"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
@@ -34,7 +33,6 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
-        <Bio />
         <ul>
           {pageLinks}
         </ul>
