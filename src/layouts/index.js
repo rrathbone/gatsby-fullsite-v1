@@ -1,41 +1,29 @@
-import React from "react"
-import Link from "gatsby-link"
-import { Container } from "react-responsive-grid"
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Container } from 'react-responsive-grid'
 
-class Template extends React.Component {
+import '../../css/main.css'
+
+// import Header from '../components/common/header'
+import Footer from '../components/common/footer'
+
+class Template extends Component {
   render() {
-    const { location, children } = this.props
-    let header
-    if (location.pathname === "/") {
-      header = (
-        <h1>
-          <Link to={"/"}>
-            Gatsby Starter Blog
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
-          <Link to={"/"}>
-            Gatsby Starter Blog
-          </Link>
-        </h3>
-      )
-    }
+    const { children } = this.props
+
     return (
       <Container>
-        {header}
+
         {children()}
+        <Footer />
       </Container>
     )
   }
 }
 
 Template.propTypes = {
-  children: React.PropTypes.function,
-  location: React.PropTypes.object,
-  route: React.PropTypes.object,
+  children: PropTypes.any,
+  route: PropTypes.object
 }
 
 export default Template

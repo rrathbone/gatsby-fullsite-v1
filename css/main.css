@@ -1,8 +1,8 @@
-/*#react-mount {
+#___gatsby {
   min-width: 100%;
 }
 
-#react-mount > [data-reactroot] {
+#___gatsby > [data-reactroot] {
   min-width: 100% !important;
 }
 
@@ -53,7 +53,7 @@ ul {
   padding-bottom: 0.7em;
   color: #4b4b4a;
   /*background-image: url("../../public/images/compass_arrow.png");*/
-  /*background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: 2.5em 1.5em;
   background-position: 21.5em 0.1em; }
   .search-input::-webkit-input-placeholder {
@@ -741,4 +741,4 @@ body {
   padding: 0; }
 
 .migo-logo {
-  width: 7em; }*/
+  width: 7em; }
