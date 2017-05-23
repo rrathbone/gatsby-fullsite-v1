@@ -1,3 +1,5 @@
+const lost = require(`lost`)
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Starter Blog",
@@ -9,6 +11,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss-sass`,
+      options: {
+        postCssPlugins: [lost()],
       },
     },
     {
