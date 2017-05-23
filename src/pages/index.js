@@ -4,8 +4,6 @@ import get from "lodash/get"
 import Helmet from "react-helmet"
 import include from "underscore.string/include"
 
-import { rhythm } from "../utils/typography"
-
 class BlogIndex extends React.Component {
   render() {
     // console.log("props", this.props)
@@ -16,13 +14,8 @@ class BlogIndex extends React.Component {
       if (post.node.path !== "/404/") {
         const title = get(post, "node.frontmatter.title") || post.node.path
         pageLinks.push(
-          <li
-            key={post.node.path}
-            style={{
-              marginBottom: rhythm(1 / 4),
-            }}
-          >
-            <Link style={{ boxShadow: "none" }} to={post.node.slug}>
+          <li key={post.node.path}>
+            <Link to={post.node.slug}>
               {post.node.frontmatter.title}
             </Link>
           </li>
