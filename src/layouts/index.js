@@ -13,7 +13,6 @@ class Template extends Component {
 
     return (
       <Container>
-
         {children()}
         <Footer />
       </Container>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from "gatsby-link"
+import Link from 'gatsby-link'
 
 class FooterLinks extends Component {
   render() {
@@ -12,7 +12,7 @@ class FooterLinks extends Component {
             <Link to="/about/"><li className="footer-links">About</li></Link>
             <Link to="/ride/"><li className="footer-links">Ride</li></Link>
             <Link to="/partners/"><li className="footer-links">Partners</li></Link>
-            <Link to="/city/"><li className="footer-links">Cities</li></Link>
+            <Link to="/locations/"><li className="footer-links">Cities</li></Link>
             <Link to="/media/"><li className="footer-links">Media & Features</li></Link>
           </ul>
         </div>
