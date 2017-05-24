@@ -12,7 +12,9 @@ import RidesInLocation from '../../components/ridesInLocation'
 import TopLocations from '../../components/topLocations'
 import TopPoints from '../../components/topPoints'
 
-class City extends React.Component {
+import placeholder from './placeholder.jpg'
+
+class City extends Component {
   render () {
 
     return (
@@ -36,11 +38,15 @@ class City extends React.Component {
           </div>
 
           <div className="row space">
-            <TopLocations />
+            <TopLocations
+              placeholder={placeholder}
+            />
           </div>
 
           <div className="row space">
-            <TopPoints />
+            <TopPoints
+              placeholder={placeholder}
+            />
           </div>
         </div>
 
@@ -52,7 +58,7 @@ class City extends React.Component {
           <RecentRides
           />
         </div>
-        
+
       </div>
     )
   }

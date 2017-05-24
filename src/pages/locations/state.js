@@ -10,6 +10,8 @@ import RidesInLocation from '../../components/ridesInLocation'
 import TopLocations from '../../components/topLocations'
 import TopPoints from '../../components/topPoints'
 
+import placeholder from './placeholder.jpg'
+
 class StatePage extends Component {
   render() {
     return (
@@ -33,11 +35,15 @@ class StatePage extends Component {
           <div className="row location-sections">
 
             <div className="row top-locations">
-              <TopLocations />
+              <TopLocations
+                placeholder={placeholder}
+              />
             </div>
 
             <div className="row top-points">
-              <TopPoints />
+              <TopPoints
+                placeholder={placeholder}
+              />
             </div>
           </div>
 

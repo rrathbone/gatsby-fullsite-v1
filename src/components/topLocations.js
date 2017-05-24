@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const TopLocations = () => {
+const TopLocations = ({ placeholder }) => {
   return (
     <section className="top-locations">
 
@@ -11,7 +12,7 @@ const TopLocations = () => {
         <div className="row places-cards">
           <div className="col-md-6 top-places left">
             <div className="col-md-4">
-              <img src="" className="places-img" alt=""/>
+              <img src={placeholder} className="places-img" alt=""/>
             </div>
 
             <div className="col-md-8">
@@ -23,7 +24,7 @@ const TopLocations = () => {
           </div>
           <div className="col-md-6 top-places">
             <div className="col-md-4">
-              <img src="" className="places-img" alt=""/>
+              <img src={placeholder} className="places-img" alt=""/>
             </div>
 
             <div className="col-md-8">
@@ -36,7 +37,7 @@ const TopLocations = () => {
         <div className="row places-cards">
           <div className="col-md-6 top-places left">
             <div className="col-md-4">
-              <img src="" className="places-img" alt=""/>
+              <img src={placeholder} className="places-img" alt=""/>
             </div>
 
             <div className="col-md-8">
@@ -48,7 +49,7 @@ const TopLocations = () => {
           </div>
           <div className="col-md-6 top-places">
             <div className="col-md-4">
-              <img src="" className="places-img" alt=""/>
+              <img src={placeholder} className="places-img" alt=""/>
             </div>
 
             <div className="col-md-8">
@@ -65,8 +66,8 @@ const TopLocations = () => {
   )
 }
 
-// TopLocations.propTypes = {
-//   market: React.PropTypes.object
-// }
+TopLocations.propTypes = {
+  placeholder: PropTypes.string
+}
 
 export default TopLocations

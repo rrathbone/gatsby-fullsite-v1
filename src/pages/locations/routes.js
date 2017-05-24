@@ -9,6 +9,8 @@ import PopularDestinations from '../../components/popularDestinations'
 import RouteOverview from '../../components/routeOverview'
 import TopPoints from '../../components/topPoints'
 
+import placeholder from './placeholder.jpg'
+
 class RoutePage extends Component {
   render() {
     return (
@@ -25,10 +27,14 @@ class RoutePage extends Component {
             <AveragePrice />
             <div>Average Prices by ridesharing companies</div>
             <div className="row top-points">
-              <TopPoints />
+              <TopPoints
+                placeholder={placeholder}
+              />
             </div>
             <div className="row top-points">
-              <TopPoints />
+              <TopPoints
+                placeholder={placeholder}
+              />
             </div>
           </div>
 

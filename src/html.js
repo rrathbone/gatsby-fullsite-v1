@@ -34,6 +34,8 @@ module.exports = React.createClass({
           />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Oswald|Raleway" />
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+          <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDArJWIq1HYsQvvuPYwVOV4RNQdkWZk_rw"></script>
           {this.props.headComponents}
           {css}
           {head.title.toComponent()}

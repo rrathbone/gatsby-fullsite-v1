@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import Link from "gatsby-link"
 
+import logo from '../assets/images/migo_white.png'
+
 class Header extends Component {
   render() {
-    // const logo = '../../public/images/migo_white.png'
 
     return (
       <div className="nav">
         <nav className="navbar navbar-light">
-          <Link to="/" className="navbar-brand"><img src="" alt="Migo logo" className="migo-logo"></img></Link>
+          <Link to="/" className="navbar-brand"><img src={logo} alt="Migo logo" className="migo-logo"></img></Link>
           <ul className="nav navbar-nav">
             <li className="nav-item">
               <Link to="/partners/" className="nav-link">Partners</Link>

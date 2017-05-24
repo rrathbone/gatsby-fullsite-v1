@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 const INITIAL_LOCATION = {
   address: 'London, United Kingdom',
@@ -8,7 +9,7 @@ const INITIAL_LOCATION = {
   }
 }
 
-class Map extends React.Component {
+class Map extends Component {
   constructor(props, context) {
     super(props, context)
 

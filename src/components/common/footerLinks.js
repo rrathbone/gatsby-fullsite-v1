@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
+import apple from '../assets/images/app-store.png'
+import google from '../assets/images/google-play.png'
+import logo from '../assets/images/migo_white.png'
+
 class FooterLinks extends Component {
   render() {
-    // const logo = '../../public/images/migo_white.png'
 
     return (
       <div className="row" id="main-footer">
@@ -27,15 +30,15 @@ class FooterLinks extends Component {
         </div>
         <div className="col-md-4" id="footer-btn">
           <div className="row btns">
-            <img className="footer-app-btn" src="" id="apple-footer"  alt="Apple Store"/>
+            <img className="footer-app-btn" src={apple} id="apple-footer"  alt="Apple Store"/>
           </div>
           <div className="row btns">
-            <img className="footer-app-btn" src="" id="google-footer" alt="Google Play Store"/>
+            <img className="footer-app-btn" src={google} id="google-footer" alt="Google Play Store"/>
           </div>
         </div>
         <div className="col-md-4">
           <div className="row" id="migo-social">
-            <Link to="/" className="footer-brand"><img src="" alt="" className="migo-logo footer"></img></Link>
+            <Link to="/" className="footer-brand"><img src={logo} alt="" className="migo-logo footer"></img></Link>
           </div>
           <div className="row" id="social-media">
             <a href="https://twitter.com/GetMigo?lang=en" target="_blank"><i className="fa fa-facebook fa-3x social-media-icons" id="linkedin-sm"></i></a>
