@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 const INITIAL_LOCATION = {
-  address: 'London, United Kingdom',
+  address: 'Seattle, WA',
   position: {
     latitude: 47.608013,
     longitude: -122.335167
@@ -58,25 +58,26 @@ class Map extends Component {
   }
 
   componentDidMount() {
+    console.log(this.props.rides);
     const mapElement = this.mapElement
 
-    // this.map = new window.google.maps.Map(mapElement, {
-    //   zoom: 10,
-    //   center: {
-    //     lat: INITIAL_LOCATION.position.latitude,
-    //     lng: INITIAL_LOCATION.position.longitude
-    //   }
-    // })
+    this.map = new window.google.maps.Map(mapElement, {
+      zoom: 10,
+      center: {
+        lat: INITIAL_LOCATION.position.latitude,
+        lng: INITIAL_LOCATION.position.longitude
+      }
+    })
 
-    // this.marker = new window.google.maps.Marker({
-    //   map: this.map,
-    //   position: {
-    //     lat: INITIAL_LOCATION.position.latitude,
-    //     lng: INITIAL_LOCATION.position.longitude
-    //   }
-    // })
+    this.marker = new window.google.maps.Marker({
+      map: this.map,
+      position: {
+        lat: INITIAL_LOCATION.position.latitude,
+        lng: INITIAL_LOCATION.position.longitude
+      }
+    })
 
-    // this.geocoder = new window.google.maps.Geocoder()
+    this.geocoder = new window.google.maps.Geocoder()
   }
 
   setSearchInputElementReference(inputReference) {
@@ -122,4 +123,4 @@ class Map extends Component {
 }
 
 
-export default Map;
+export default Map

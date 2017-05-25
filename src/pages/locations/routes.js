@@ -11,7 +11,7 @@ import TopPoints from '../../components/topPoints'
 
 import placeholder from './placeholder.jpg'
 
-class RoutePage extends Component {
+class Routes extends Component {
   render() {
     return (
       <div className="route-page">
@@ -51,4 +51,4 @@ class RoutePage extends Component {
   }
 }
 
-export default RoutePage
+export default Routes

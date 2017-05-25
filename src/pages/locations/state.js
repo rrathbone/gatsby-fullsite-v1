@@ -12,7 +12,7 @@ import TopPoints from '../../components/topPoints'
 
 import placeholder from './placeholder.jpg'
 
-class StatePage extends Component {
+class State extends Component {
   render() {
     return (
       <div className="state-page">
@@ -53,4 +53,4 @@ class StatePage extends Component {
   }
 }
 
-export default StatePage
+export default State
