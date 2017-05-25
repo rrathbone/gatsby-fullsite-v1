@@ -3,3 +3,8 @@ public
 .gatsby-context.js
 .DS_Store
 .intermediate-representation/
+<<<<<<< HEAD
+=======
+.cache/
+yarn.lock
+>>>>>>> map
