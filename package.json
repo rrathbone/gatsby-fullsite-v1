@@ -22,6 +22,7 @@
     "gatsby-remark-responsive-image": "canary",
     "gatsby-remark-smartypants": "canary",
     "gatsby-source-filesystem": "canary",
+    "gatsby-transformer-json": "^1.0.0-alpha12-alpha.51e1923f",
     "gatsby-transformer-remark": "canary",
     "gatsby-transformer-sharp": "canary",
     "google-maps-react": "^1.0.19",
