@@ -7,33 +7,32 @@ const FooterCities = ({ market }) => {
     <div>
       <div className="col-md-2">
         <ul>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-        </ul>
-
-      </div>
-      <div className="col-md-2">
-        <ul>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+          <li className="footer-city-links">Seattle</li>
+          <li className="footer-city-links">San Diego</li>
+          <li className="footer-city-links">Austin</li>
+          <li className="footer-city-links">Boston</li>
+          <li className="footer-city-links">Boulder</li>
+          <li className="footer-city-links">Denver</li>
         </ul>
       </div>
       <div className="col-md-2">
         <ul>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
-          <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+          <li className="footer-city-links">Seattle</li>
+          <li className="footer-city-links">San Diego</li>
+          <li className="footer-city-links">Austin</li>
+          <li className="footer-city-links">Boston</li>
+          <li className="footer-city-links">Boulder</li>
+          <li className="footer-city-links">Denver</li>
+        </ul>
+      </div>
+      <div className="col-md-2">
+        <ul>
+          <li className="footer-city-links">Seattle</li>
+          <li className="footer-city-links">San Diego</li>
+          <li className="footer-city-links">Austin</li>
+          <li className="footer-city-links">Boston</li>
+          <li className="footer-city-links">Boulder</li>
+          <li className="footer-city-links">Denver</li>
         </ul>
       </div>
 
@@ -46,3 +45,33 @@ FooterCities.propTypes = {
 }
 
 export default FooterCities
+
+// <ul>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+// </ul>
+//
+// </div>
+// <div className="col-md-2">
+// <ul>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+// </ul>
+// </div>
+// <div className="col-md-2">
+// <ul>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+//   <Link to={'/city/' + market.marketId} className="footer-city-links">{market.label}</Link>
+// </ul>

@@ -6,7 +6,7 @@
     margin-bottom: 0;
     width: 80%;
     margin: auto;
-    height: 4.5em;
+    height: 100%;
     margin-top: -1em;
   }
 
@@ -19,7 +19,7 @@
 
   a.nav-link {
     color: $footer-nav-text;
-    font-size: $p-size;
+    font-size: 1.9rem;;
     font-weight: bold;
     margin-top: 0.35em;
   }
@@ -42,7 +42,7 @@
 
   .nav > li {
     a {
-      height: 4.2em;
+      height: 4.1em;
       margin-top: -0.6em;
       padding-top: 1.6em;
       min-width: 100px;

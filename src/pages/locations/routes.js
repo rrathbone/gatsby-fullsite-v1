@@ -23,9 +23,8 @@ class Routes extends Component {
           <div className="row location-sections">
             <BreadCrumbs />
             <RouteOverview />
-            <div>Overview about this route</div>
             <AveragePrice />
-            <div>Average Prices by ridesharing companies</div>
+            
             <div className="row top-points">
               <TopPoints
                 placeholder={placeholder}

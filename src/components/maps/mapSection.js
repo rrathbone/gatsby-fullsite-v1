@@ -3,7 +3,7 @@ import superagent from 'superagent'
 import { geolocated } from 'react-geolocated'
 
 import Map from './map'
-import NewMap from './newMap'
+// import NewMap from './newMap'
 
 class MapSection extends Component {
   constructor(props) {
@@ -64,13 +64,15 @@ class MapSection extends Component {
           mapLoaded={this.state.mapLoaded}
           rides={this.state.rides}
         />
-        <NewMap
 
-        />
       </div>
     )
   }
 }
+
+// <NewMap
+//
+// />
 
 export default geolocated({
   positionOptions: {

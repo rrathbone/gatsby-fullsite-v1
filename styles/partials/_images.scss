@@ -1,4 +1,10 @@
-// $base-path: '../../public/images/';
-// $file-name: 'compass_arrow';
-// $extension: 'png';
-// $file-path: $base-path + $file-name + '.' + $extension;
+$base-path: '../assets/images/';
+
+$file-name-banner: 'placeholder-banner';
+$compass-arrow: 'compass-arrow';
+
+$jpg: 'jpg';
+$png: 'png';
+
+$file-path: $base-path + $compass-arrow + '.' + $png;
+$file-path-banner: $base-path + $file-name-banner + '.' + $jpg;

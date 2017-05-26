@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Container } from 'react-responsive-grid'
 
-import '../../css/main.css'
+import '../../styles/main.scss'
 
 // import Header from '../components/common/header'
 import Footer from '../components/common/footer'

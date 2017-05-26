@@ -3,7 +3,7 @@ import React from 'react'
 const RecentRides = () => {
   return (
     <section id="recent-rides">
-      <h2>Recent Routes in LOCATION</h2>
+      <h2>Recent Routes in Seattle</h2>
       <p>Rump pancetta tail bacon, fatback burgdoggen hamburger tri-tip jerky pork chop drumstick. Shoulder pork strip steak hamburger. Turducken burgdoggen kielbasa landjaeger, picanha meatball fatback t-bone shoulder strip steak pig meatloaf andouille tongue.</p>
 
       <div className="row recent-rides-cards">

@@ -3,7 +3,16 @@ $border-radius-corner: 5px;
 
 .location-banner {
   height: 52em;
-  background: $migo-blue;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url($file-path-banner) center;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	background-size: cover;
   text-align: center;
 
   #location-header {
@@ -47,10 +56,10 @@ $border-radius-corner: 5px;
     padding-bottom: 0.7em;
     color: $footer-grey;
 
-    // background-image: url($file-path);
+    background-image: url($file-path);
     background-repeat: no-repeat;
     background-size: 2.5em 1.5em;
-    background-position: 21.5em 0.1em;
+    background-position: 27.5em 0.1em;
 
     @include placeholder {
       color: lighten($footer-grey, 40%);
@@ -116,7 +125,7 @@ $border-radius-corner: 5px;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: $p-size;
     margin-bottom: 2em;
   }
 
@@ -240,7 +249,7 @@ $border-radius-corner: 5px;
 
   .geolocation {
     width: 65%;
-    margin-left: 11%;
+    margin-left: 9%;
 
     .search-input, .search-label {
       width: 45%;

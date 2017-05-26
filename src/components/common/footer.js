@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby-link'
 
-// import FooterCities from './footerCities'
+import FooterCities from './footerCities'
 import FooterLinks from './footerLinks'
 
 class Footer extends Component {
@@ -29,7 +29,7 @@ class Footer extends Component {
 
           <div className="row" id="city-footer">
             <h5>Top Cities</h5>
-            <p>Top cities go here</p>
+            <FooterCities />
           </div>
         </footer>
       </div>

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import BreadCrumbs from '../../components/common/breadcrumbs'
 import CompareRides from '../../components/compareRides'
 import GettingAround from '../../components/gettingAround'
+import Geolocation from '../../components/maps/geolocation'
 import Header from '../../components/common/header'
 import LocationBanner from '../../components/locationBanner'
 import MapSection from '../../components/maps/mapSection'
@@ -21,6 +22,7 @@ class City extends Component {
       <div className="city-page">
         <Header />
         <LocationBanner
+
         />
 
         <div className="row getting-around location-sections">
@@ -57,6 +59,13 @@ class City extends Component {
         <div className="row space location-sections">
           <RecentRides
           />
+        </div>
+
+        <div className="row">
+          <div className="search-fields">
+            <Geolocation />
+            <button className="location-btn">Compare Rides</button>
+          </div>
         </div>
 
       </div>
