@@ -14,10 +14,17 @@ import TopLocations from '../../components/topLocations'
 import TopPoints from '../../components/topPoints'
 
 import placeholder from './placeholder.jpg'
+import car2go from '../../../assets/images/car2go_logo.png'
+import curb from '../../../assets/images/curb_logo.png'
+import flywheel from '../../../assets/images/flywheel_logo.jpeg'
+import lyft from '../../../assets/images/lyft_logo.png'
+import reachnow from '../../../assets/images/reachnow_logo.png'
+import syc from '../../../assets/images/yellowcab_logo.jpeg'
+import zipcar from '../../../assets/images/zipcar_logo.jpg'
+import zoro from '../../../assets/images/zoro_logo.png'
 
 class City extends Component {
-  render () {
-
+  render() {
     return (
       <div className="city-page">
         <Header />
@@ -36,6 +43,14 @@ class City extends Component {
         <div className="location-sections">
           <div className="row space rides-in-location">
             <RidesInLocation
+              car2go={car2go}
+              curb={curb}
+              flywheel={flywheel}
+              lyft={lyft}
+              reachnow={reachnow}
+              syc={syc}
+              zipcar={zipcar}
+              zoro={zoro}
             />
           </div>
 
