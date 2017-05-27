@@ -7,6 +7,10 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
+    "can-use-dom": "^0.1.0",
+    "classnames": "^2.2.5",
+    "create-react-class": "^15.5.3",
+    "enquire.js": "^2.1.6",
     "fs-extra-promise": "^1.0.1",
     "gatsby": "canary",
     "gatsby-link": "canary",
@@ -27,9 +31,11 @@
     "gatsby-transformer-sharp": "canary",
     "google-maps-react": "^1.0.19",
     "invariant": "^2.2.2",
+    "json2mq": "^0.2.0",
     "lodash": "^4.15.0",
     "lost": "^8.0.0",
     "moment": "^2.14.1",
+    "object-assign": "^4.1.1",
     "prop-types": "^15.5.10",
     "react-dom": "^15.5.4",
     "react-geolocated": "^1.0.3",
@@ -38,6 +44,7 @@
     "react-responsive-grid": "^0.3.3",
     "react-typography": "^0.15.0",
     "safe-access": "^0.1.0",
+    "slick-carousel": "^1.6.0",
     "superagent": "^3.5.2",
     "typeface-merriweather": "^0.0.25",
     "typeface-montserrat": "^0.0.24",
@@ -46,6 +53,7 @@
     "underscore.string": "^3.2.3"
   },
   "devDependencies": {
+    "foundation-apps": "^1.2.0",
     "gh-pages": "^0.12.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
