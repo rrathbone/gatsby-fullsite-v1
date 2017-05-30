@@ -3,30 +3,93 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 class Breadcrumbs extends Component {
+  renderCountryLinks() {
+    return [
+      <li className="breadcrumb-item" key={1}>
+        <Link to="/" className="breadcrumb-link">Home</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={2}>
+        <Link to="" className="breadcrumb-link">Country</Link>
+      </li>
+    ]
+  }
+
+  renderStateLinks() {
+    return [
+      <li className="breadcrumb-item" key={1}>
+        <Link to="/" className="breadcrumb-link">Home</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={2}>
+        <Link to="" className="breadcrumb-link">Country</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={3}>
+        <Link to="/locations/state" className="breadcrumb-link">State</Link>
+      </li>
+    ]
+  }
+
+  renderCityLinks() {
+    return [
+      <li className="breadcrumb-item" key={1}>
+        <Link to="/" className="breadcrumb-link">Home</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={2}>
+        <Link to="" className="breadcrumb-link">Country</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={3}>
+        <Link to="/locations/state" className="breadcrumb-link">State</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={4}>
+        <Link to="/locations/city" className="breadcrumb-link">City</Link>
+      </li>
+    ]
+  }
+
+  renderRouteLinks() {
+    return [
+      <li className="breadcrumb-item" key={1}>
+        <Link to="/" className="breadcrumb-link">Home</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={2}>
+        <Link to="" className="breadcrumb-link">Country</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={3}>
+        <Link to="/locations/state" className="breadcrumb-link">State</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={4}>
+        <Link to="/locations/city" className="breadcrumb-link">City</Link><span>{" > "}</span>
+      </li>,
+      <li className="breadcrumb-item" key={5}>
+        <Link to="/locations/routes" className="breadcrumb-link">First location - second location</Link>
+      </li>
+    ]
+  }
+
   render() {
+    let cityPage = false
+    let statePage = false
+
+    if(location.pathname.includes('city')) {
+      cityPage = true
+    }
+
+    if(location.pathname.includes('state')) {
+      statePage = true
+    }
+
     return (
-      <section className="breadcrumbs">
+      <div className="breadcrumbs">
         <ul className="city-breadcrumbs">
-          <li className="breadcrumb-item" key={1}>
-            <Link to="/" className="breadcrumb-link">Home</Link><span>{" > "}</span>
-          </li>
-          <li className="breadcrumb-item" key={2}>
-            <Link to="" className="breadcrumb-link"> Country</Link><span>{" > "}</span>
-          </li>
-          <li className="breadcrumb-item" key={3}>
-            <Link to="/locations/state/" className="breadcrumb-link"> State</Link><span>{" > "}</span>
-          </li>
-          <li className="breadcrumb-item" key={4}>
-            <Link to="/locations/city" className="breadcrumb-link"> City</Link>
-          </li>
+          {cityPage ? this.renderCityLinks() : statePage ? this.renderStateLinks() : this.renderRouteLinks()}
         </ul>
-      </section>
+      </div>
     )
   }
 }
 
-Breadcrumbs.propTypes = {
-  markets: PropTypes.array
-}
+
+// Breadcrumbs.propTypes = {
+//   markets: PropTypes.array
+// }
 
 export default Breadcrumbs

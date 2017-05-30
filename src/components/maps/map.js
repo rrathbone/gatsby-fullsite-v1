@@ -58,7 +58,6 @@ class Map extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.rides);
     const mapElement = this.mapElement
 
     this.map = new window.google.maps.Map(mapElement, {
