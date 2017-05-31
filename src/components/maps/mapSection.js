@@ -29,7 +29,7 @@ class MapSection extends Component {
       });
     }.bind(this), 5000);
 
-		const migoUrl = 'http://dev.getmigo.com/api/drivers?lat=47.608013&lng=-122.335167'
+		const migoUrl = 'https://dev.getmigo.com/api/drivers?lat=47.608013&lng=-122.335167'
 
 		superagent
 		.get(migoUrl)
@@ -37,6 +37,8 @@ class MapSection extends Component {
 		.set('Accept', 'text/json')
 		.end((err, res) => {
 			const locations = res.body.nearby_drivers
+      // console.log(locations);
+      // console.log(locations);
 
       let ridesRes = [];
       let rideMarkers = [];

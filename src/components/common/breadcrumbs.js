@@ -29,6 +29,16 @@ class Breadcrumbs extends Component {
   }
 
   renderCityLinks() {
+    let cityName
+
+    if(location.pathname.includes('seattle')) {
+      cityName = 'Seattle'
+    } else {
+      cityName = 'City'
+    }
+
+    console.log('NAME', cityName);
+
     return [
       <li className="breadcrumb-item" key={1}>
         <Link to="/" className="breadcrumb-link">Home</Link><span>{" > "}</span>
@@ -40,7 +50,7 @@ class Breadcrumbs extends Component {
         <Link to="/locations/state" className="breadcrumb-link">State</Link><span>{" > "}</span>
       </li>,
       <li className="breadcrumb-item" key={4}>
-        <Link to="/locations/city" className="breadcrumb-link">City</Link>
+        <Link to="/locations/city" className="breadcrumb-link">{cityName}</Link>
       </li>
     ]
   }
@@ -69,7 +79,7 @@ class Breadcrumbs extends Component {
     let cityPage = false
     let statePage = false
 
-    if(location.pathname.includes('city')) {
+    if(location.pathname.includes('city') || location.pathname.includes('seattle')) {
       cityPage = true
     }
 
