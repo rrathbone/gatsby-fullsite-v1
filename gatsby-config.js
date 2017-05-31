@@ -2,8 +2,7 @@ const lost = require(`lost`)
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "Migo"
   },
   plugins: [
     {

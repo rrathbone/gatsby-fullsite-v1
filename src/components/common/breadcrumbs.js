@@ -37,8 +37,6 @@ class Breadcrumbs extends Component {
       cityName = 'City'
     }
 
-    console.log('NAME', cityName);
-
     return [
       <li className="breadcrumb-item" key={1}>
         <Link to="/" className="breadcrumb-link">Home</Link><span>{" > "}</span>
