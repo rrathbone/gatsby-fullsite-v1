@@ -24,7 +24,7 @@ class Routes extends Component {
             <BreadCrumbs />
             <RouteOverview />
             <AveragePrice />
-            
+
             <div className="row top-points">
               <TopPoints
                 placeholder={placeholder}

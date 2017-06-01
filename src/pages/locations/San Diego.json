@@ -8,11 +8,9 @@
         "rideTypeId": 2,
         "rideType": "car share"
       },
-      "icons": [
-        {
-          "url": "in German San Diego translate to [insert translation here]"
-        }
-      ]
+      "assets": {
+        "url": "in German San Diego translate to [insert translation here]"
+      }
     },
     {
       "providerName": "car2go",
@@ -20,11 +18,9 @@
         "rideTypeId": 2,
         "rideType": "car share"
       },
-      "icons": [
-        {
-          "url": "map of directions from coffee to office"
-        }
-      ]
+      "assets": {
+        "url": "map of directions from coffee to office"
+      }
     }
   ]
 }

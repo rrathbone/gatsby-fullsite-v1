@@ -265,3 +265,38 @@ $border-radius-corner: 5px;
     height: 4.7em;
   }
 }
+
+.route-overview, .popular-destinations {
+  h2 {
+    margin-top: 3em;
+  }
+}
+
+#route-page {
+  #poi-routes {
+    margin-top: 3em;
+  }
+
+  .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    height: 15em;
+
+    .flex-item, .flex-item-wide {
+      background: lighten($footer-grey, 40%);
+      width: 50%;
+      height: 100%;
+      margin: 1em;
+    }
+
+    .flex-item {
+      -webkit-flex: 1;
+      flex: 1;
+    }
+
+    .flex-item-wide {
+      -webkit-flex: 2;
+      flex: 2;
+    }
+  }
+}

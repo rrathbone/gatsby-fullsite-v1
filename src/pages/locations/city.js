@@ -40,8 +40,7 @@ class City extends Component {
 
         <MapSection />
 
-        <div className="location-sections">
-          <div className="row space rides-in-location">
+          <div className="row space rides-in-location location-sections">
             <RidesInLocation
               car2go={car2go}
               curb={curb}
@@ -54,18 +53,17 @@ class City extends Component {
             />
           </div>
 
-          <div className="row space">
+          <div className="row space location-sections">
             <TopLocations
               placeholder={placeholder}
             />
           </div>
 
-          <div className="row space">
+          <div className="row space location-sections">
             <TopPoints
               placeholder={placeholder}
             />
           </div>
-        </div>
 
         <div className="row space compare-rides">
           <CompareRides />

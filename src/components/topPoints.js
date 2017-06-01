@@ -22,7 +22,7 @@ const TopPoints = ({ placeholder }) => {
     <section className="top-points-of-interest">
       {cityPage ?
         <div>
-          <h2>Top Points of interest in CITY</h2>
+          <h2>Top Points of Interest in CITY</h2>
           <p>Pancetta meatloaf jowl cow, sausage ham biltong filet mignon hamburger pork belly leberkas shank tail frankfurter. Corned beef meatball hamburger swine bacon turducken fatback pork chop salami strip steak short loin venison pork loin frankfurter pork belly.</p>
           <div className="row places-cards">
             <div className="col-md-6 top-places left">
@@ -78,7 +78,7 @@ const TopPoints = ({ placeholder }) => {
 
         : seattlePage ?
           <div>
-            <h2>Top Points of interest in Seattle</h2>
+            <h2>Top Points of Interest in Seattle</h2>
             <p>Pancetta meatloaf jowl cow, sausage ham biltong filet mignon hamburger pork belly leberkas shank tail frankfurter. Corned beef meatball hamburger swine bacon turducken fatback pork chop salami strip steak short loin venison pork loin frankfurter pork belly.</p>
             <div className="row places-cards">
               <div className="col-md-6 top-places left">
@@ -134,7 +134,7 @@ const TopPoints = ({ placeholder }) => {
 
         : statePage ?
         <div>
-          <h2>Top Points of interest in STATE</h2>
+          <h2>Top Points of Interest in STATE</h2>
           <p>Pancetta meatloaf jowl cow, sausage ham biltong filet mignon hamburger pork belly leberkas shank tail frankfurter. Corned beef meatball hamburger swine bacon turducken fatback pork chop salami strip steak short loin venison pork loin frankfurter pork belly.</p>
           <div className="row places-cards">
             <div className="col-md-6 top-places left">
@@ -189,7 +189,7 @@ const TopPoints = ({ placeholder }) => {
         </div>
         :
         <div>
-          <h2>Top Points of interest in LOCATION</h2>
+          <h2 id="poi-routes">Top Points of interest in LOCATION</h2>
           <p>Pancetta meatloaf jowl cow, sausage ham biltong filet mignon hamburger pork belly leberkas shank tail frankfurter. Corned beef meatball hamburger swine bacon turducken fatback pork chop salami strip steak short loin venison pork loin frankfurter pork belly.</p>
           <div className="row places-cards">
             <div className="col-md-6 top-places left">
